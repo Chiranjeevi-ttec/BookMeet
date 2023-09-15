@@ -24,12 +24,11 @@ namespace BookMeet.API.Controllers
         }
 
 
-        // To generate access token
         /// <summary>
-        /// 
+        /// Get Avaialble Timeslot
         /// </summary>
         /// <returns></returns>
-        [HttpPost("Get Avaialble Timeslot")]
+        [HttpPost("GetAvaialbleTimeslot")]
         public async Task<OperationResult<ScheduleResponse>> GetSchedule([FromBody] ScheduleRequest request)
         {
             string json = String.Empty;
